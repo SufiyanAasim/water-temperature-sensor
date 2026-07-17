@@ -198,4 +198,4 @@ void showStatus(const __FlashStringHelper *msg) {
 | `setAlarm()` | Alarm state transitions — called with hysteresis (`ALARM_ON_C` arm / `ALARM_OFF_C` release) so the buzzer never chatters. |
 | `showTemperature()` / `showStatus()` | Flicker-free display: rows overwritten in place and padded to 16 columns; custom `°` glyph from CGRAM slot 0. |
 
-Design rationale and the alarm state machine: [Architecture](Architecture.md). Historical v0.0.1 "Atom" source: [`archive/`](../archive/watertempraturesensor-v0.0.1-atom.ino).
+Design rationale and the alarm state machine: [Architecture](Architecture.md). Historical v0.0.1 "Atom" source: [`archive/`](../archive/watertempraturesensor_v0_0_1_atom/watertempraturesensor_v0_0_1_atom.ino).

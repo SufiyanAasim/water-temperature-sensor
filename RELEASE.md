@@ -26,10 +26,11 @@ settings, while the version remains the plain `v0.0.1` tag.
    28 °C), and fault path (probe disconnect and recovery).
 3. Update the `Version:` line in the sketch header comment.
 4. If the release supersedes the current sketch in a way worth preserving,
-   copy the outgoing version into `archive/` as
-   `watertempraturesensor-v<version>-<codename>.ino` with a historical-artifact
-   header — archived sketches live outside the sketch root so the IDE and CI
-   never compile them.
+   copy the outgoing version into its own sketch folder under `archive/` as
+   `archive/watertempraturesensor_v<x>_<y>_<z>_<codename>/<same name>.ino`
+   with a historical-artifact header. Each archived sketch keeps its own
+   folder (name matching the `.ino`) so it never merges into the current
+   sketch and CI can still compile-verify it.
 
 ## 3. Update version references
 

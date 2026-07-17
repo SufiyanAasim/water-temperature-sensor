@@ -5,8 +5,8 @@
  * released. Superseded by the non-blocking, fault-tolerant v1.0.0 "Ion"
  * implementation in the repository root. Do not modify.
  *
- * Note: this file lives in archive/ (not the sketch root) so the Arduino IDE
- * and CI never merge or compile it alongside the current sketch.
+ * Note: this sketch lives in its own folder under archive/ so it is never
+ * merged into the current sketch, while CI still compile-verifies it.
  */
 
 #include <OneWire.h>
