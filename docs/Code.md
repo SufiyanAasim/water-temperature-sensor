@@ -1,3 +1,10 @@
+# Source Code — v1.0.0 "Ion"
+
+> **Canonical source:** [`WaterTempratureSensor.ino`](../WaterTempratureSensor.ino) — this page is a readable reference copy, regenerated each release. If the two ever differ, the `.ino` wins.
+
+## Full Listing
+
+```cpp
 /*
  * Water Temperature Sensor
  *
@@ -179,3 +186,16 @@ void showStatus(const __FlashStringHelper *msg) {
   lcd.setCursor(0, 1);
   lcd.print(msg);
 }
+```
+
+## Walkthrough
+
+| Section | What it does |
+|---|---|
+| `#define` block | Every tunable — pins, LCD address, thresholds, timing. Documented in the [README configuration table](../README.md#%EF%B8%8F-configuration). |
+| `setup()` | Buzzer self-test (two chirps), LCD init + splash, sensor init at 12-bit with async conversions, empty-bus check, CSV header, first conversion kicked off. |
+| `loop()` | Three independent `millis()`-based jobs: start a conversion each second, collect + validate the result when ready, pulse the buzzer while alarming. No `delay()` anywhere. |
+| `setAlarm()` | Alarm state transitions — called with hysteresis (`ALARM_ON_C` arm / `ALARM_OFF_C` release) so the buzzer never chatters. |
+| `showTemperature()` / `showStatus()` | Flicker-free display: rows overwritten in place and padded to 16 columns; custom `°` glyph from CGRAM slot 0. |
+
+Design rationale and the alarm state machine: [Architecture](Architecture.md). Historical v0.0.1 "Atom" source: [`archive/`](../archive/watertempraturesensor-v0.0.1-atom.ino).

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" role="img" aria-label="LCD showing Temp 28.63 C, Temp Normal">
+  <rect width="560" height="250" rx="12" fill="#f1f5f9"/>
+
+  <!-- LCD module PCB -->
+  <rect x="60" y="45" width="440" height="170" rx="8" fill="#166534"/>
+  <!-- Mounting holes -->
+  <circle cx="78" cy="63" r="5" fill="#f1f5f9"/>
+  <circle cx="482" cy="63" r="5" fill="#f1f5f9"/>
+  <circle cx="78" cy="197" r="5" fill="#f1f5f9"/>
+  <circle cx="482" cy="197" r="5" fill="#f1f5f9"/>
+  <!-- Pin header -->
+  <g fill="#facc15">
+    <rect x="120" y="50" width="6" height="10"/><rect x="132" y="50" width="6" height="10"/>
+    <rect x="144" y="50" width="6" height="10"/><rect x="156" y="50" width="6" height="10"/>
+    <rect x="168" y="50" width="6" height="10"/><rect x="180" y="50" width="6" height="10"/>
+    <rect x="192" y="50" width="6" height="10"/><rect x="204" y="50" width="6" height="10"/>
+  </g>
+
+  <!-- Screen bezel + backlit screen -->
+  <rect x="95" y="72" width="370" height="118" rx="4" fill="#0f172a"/>
+  <rect x="103" y="80" width="354" height="102" rx="3" fill="#1d4ed8"/>
+
+  <!-- 16x2 character text -->
+  <text x="118" y="122" font-family="Consolas, 'Courier New', monospace" font-size="26" letter-spacing="6" fill="#eff6ff">Temp: 28.63&#176;C</text>
+  <text x="118" y="164" font-family="Consolas, 'Courier New', monospace" font-size="26" letter-spacing="6" fill="#eff6ff">Temp Normal</text>
+
+  <!-- Status caption -->
+  <text x="280" y="238" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#475569">Below threshold — buzzer off</text>
+</svg>

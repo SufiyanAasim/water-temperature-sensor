@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Water Temperature Sensor logo">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="mercury" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f87171"/>
+      <stop offset="1" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Water drop -->
+  <path d="M120 18 C 78 78, 48 116, 48 156 a72 72 0 0 0 144 0 C 192 116, 162 78, 120 18 Z"
+        fill="url(#water)"/>
+
+  <!-- Thermometer body -->
+  <rect x="106" y="70" width="28" height="90" rx="14" fill="#f8fafc"/>
+  <circle cx="120" cy="176" r="26" fill="#f8fafc"/>
+
+  <!-- Mercury -->
+  <rect x="114" y="110" width="12" height="56" rx="6" fill="url(#mercury)"/>
+  <circle cx="120" cy="176" r="17" fill="url(#mercury)"/>
+
+  <!-- Scale ticks -->
+  <line x1="140" y1="86"  x2="150" y2="86"  stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+  <line x1="140" y1="104" x2="150" y2="104" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+  <line x1="140" y1="122" x2="150" y2="122" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+</svg>

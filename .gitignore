@@ -1,0 +1,16 @@
+# Arduino build artifacts
+build/
+*.hex
+*.elf
+*.bin
+*.eep
+
+# arduino-cli / IDE caches
+.arduino/
+.vscode/
+*.d
+*.o
+
+# OS cruft
+Thumbs.db
+.DS_Store

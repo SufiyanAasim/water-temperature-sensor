@@ -1,0 +1,37 @@
+name: 🐛 Bug Report
+description: Something doesn't work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Board
+      placeholder: e.g. Arduino Uno R3
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Library versions
+      placeholder: |
+        OneWire 2.3.8
+        DallasTemperature 4.0.4
+        LiquidCrystal I2C 1.1.2
+  - type: textarea
+    id: wiring
+    attributes:
+      label: Wiring / hardware notes
+      description: Anything different from the README wiring? Pull-up present? LCD address?
+  - type: textarea
+    id: serial
+    attributes:
+      label: Serial output
+      description: Paste a few lines from the serial monitor (9600 baud) if relevant.
+      render: text

@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  compile:
+    name: Compile sketch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile for Uno
+        uses: arduino/compile-sketches@v1
+        with:
+          fqbn: arduino:avr:uno
+          sketch-paths: |
+            - ./
+          libraries: |
+            - name: OneWire
+            - name: DallasTemperature
+            - name: LiquidCrystal I2C
+          enable-warnings-report: true
+
+      - name: Compile for Nano
+        uses: arduino/compile-sketches@v1
+        with:
+          fqbn: arduino:avr:nano
+          sketch-paths: |
+            - ./
+          libraries: |
+            - name: OneWire
+            - name: DallasTemperature
+            - name: LiquidCrystal I2C
