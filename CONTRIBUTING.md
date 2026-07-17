@@ -11,7 +11,7 @@ Thanks for your interest in improving Water Temperature Sensor!
 2. **Make your change.** Keep the sketch self-contained — no extra source files unless a change genuinely needs one.
 3. **Verify it compiles** for the Uno:
    ```
-   arduino-cli compile --fqbn arduino:avr:uno .
+   arduino-cli compile --fqbn arduino:avr:uno WaterTempratureSensor
    ```
    If you have the hardware, flash it and confirm the LCD, buzzer, and serial log all still behave.
 4. **Update the docs** if behaviour changed — README configuration table, User Guide, and CHANGELOG.

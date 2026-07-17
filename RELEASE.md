@@ -20,7 +20,7 @@ settings, while the version remains the plain `v0.0.1` tag.
 ## 2. Prepare the sketch
 
 1. Confirm the sketch compiles cleanly for Uno **and** Nano
-   (`arduino-cli compile --fqbn arduino:avr:uno .` — CI enforces the same).
+   (`arduino-cli compile --fqbn arduino:avr:uno WaterTempratureSensor` — CI enforces the same).
 2. Run the behavioural checklist in [docs/Development.md](docs/Development.md#testing-a-change):
    boot self-test chirps, normal path, alarm path (arm at 30 °C, release below
    28 °C), and fault path (probe disconnect and recovery).
@@ -71,7 +71,7 @@ Added/Changed sections, Compatibility, Contributors, and Release Summary.
 ## 6. Refresh checksums
 
 ```bash
-sha256sum WaterTempratureSensor.ino archive/*.ino > CHECKSUMS.sha256
+sha256sum WaterTempratureSensor/WaterTempratureSensor.ino archive/*/*.ino > CHECKSUMS.sha256
 ```
 
 Verify with `sha256sum -c CHECKSUMS.sha256`.

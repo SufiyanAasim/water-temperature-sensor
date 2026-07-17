@@ -60,4 +60,4 @@ Copy-paste into a spreadsheet, or use the IDE's Serial Plotter for a live graph 
 
 ## Changing the Thresholds
 
-Edit the `#define`s at the top of [`WaterTempratureSensor.ino`](../../WaterTempratureSensor.ino) and re-upload. Keep `ALARM_OFF_C` a degree or two below `ALARM_ON_C` — setting them equal removes the hysteresis and brings back alarm chatter. The full table of tunables is in the [README](../../README.md#%EF%B8%8F-configuration).
+Edit the `#define`s at the top of [`WaterTempratureSensor.ino`](../../WaterTempratureSensor/WaterTempratureSensor.ino) and re-upload. Keep `ALARM_OFF_C` a degree or two below `ALARM_ON_C` — setting them equal removes the hysteresis and brings back alarm chatter. The full table of tunables is in the [README](../../README.md#%EF%B8%8F-configuration).

@@ -28,7 +28,7 @@ Signal flow: the DS18B20 measures temperature digitally on the probe itself and 
 
 ## Firmware Architecture
 
-All logic lives in [`WaterTempratureSensor.ino`](../WaterTempratureSensor.ino) — a single sketch, structured around three principles:
+All logic lives in [`WaterTempratureSensor.ino`](../WaterTempratureSensor/WaterTempratureSensor.ino) — a single sketch, structured around three principles:
 
 ### 1. Non-blocking timing
 

@@ -11,15 +11,15 @@
 
 ## Building
 
-**Arduino IDE:** open [`WaterTempratureSensor.ino`](../WaterTempratureSensor.ino), select *Arduino Uno* and your port, Upload.
+**Arduino IDE:** open [`WaterTempratureSensor.ino`](../WaterTempratureSensor/WaterTempratureSensor.ino), select *Arduino Uno* and your port, Upload.
 
 **arduino-cli:**
 
 ```bash
 arduino-cli core install arduino:avr
 arduino-cli lib install OneWire DallasTemperature "LiquidCrystal I2C"
-arduino-cli compile --fqbn arduino:avr:uno .
-arduino-cli upload  --fqbn arduino:avr:uno -p <PORT> .
+arduino-cli compile --fqbn arduino:avr:uno WaterTempratureSensor
+arduino-cli upload  --fqbn arduino:avr:uno -p <PORT> WaterTempratureSensor
 ```
 
 ## Simulation

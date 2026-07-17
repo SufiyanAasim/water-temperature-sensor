@@ -1,6 +1,6 @@
 # Source Code — v1.0.0 "Ion"
 
-> **Canonical source:** [`WaterTempratureSensor.ino`](../WaterTempratureSensor.ino) — this page is a readable reference copy, regenerated each release. If the two ever differ, the `.ino` wins.
+> **Canonical source:** [`WaterTempratureSensor.ino`](../WaterTempratureSensor/WaterTempratureSensor.ino) — this page is a readable reference copy, regenerated each release. If the two ever differ, the `.ino` wins.
 
 ## Full Listing
 

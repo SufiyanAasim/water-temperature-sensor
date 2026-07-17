@@ -108,7 +108,7 @@ Full details and breadboard notes: [docs/hardware/Wiring.md](docs/hardware/Wirin
    - `DallasTemperature` (Miles Burton)
    - `LiquidCrystal I2C` (Frank de Brabander / johnrickman)
 3. **Wire the circuit** as above — don't forget the 4.7 kΩ pull-up
-4. **Open** [`WaterTempratureSensor.ino`](WaterTempratureSensor.ino), select your board and port, and **Upload**
+4. **Open** [`WaterTempratureSensor.ino`](WaterTempratureSensor/WaterTempratureSensor.ino), select your board and port, and **Upload**
 5. Open the **Serial Monitor** at 9600 baud to see the CSV log
 
 ## ⚙️ Configuration
@@ -132,7 +132,8 @@ All tunables are `#define`s at the top of the sketch:
 
 ```
 WaterTempratureSensor/
-├── WaterTempratureSensor.ino   # The sketch — all logic lives here
+├── WaterTempratureSensor/
+│   └── WaterTempratureSensor.ino   # The sketch — all logic lives here
 ├── archive/                    # Historical sketch versions (v0.0.1 "Atom", …)
 ├── assets/                     # Logo & artwork
 ├── docs/
